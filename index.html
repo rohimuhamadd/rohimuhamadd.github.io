@@ -15,6 +15,90 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
+  <style>
+    .resume-section {
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .resume-section h2 {
+      color: #001a33;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .d-flex.flex-column.flex-md-row {
+      margin-bottom: 40px;
+    }
+
+    .d-flex.flex-column.flex-md-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn-portfolio {
+      background-color: #4da6ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .btn-portfolio:hover {
+      background-color: #2d7acc;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(77, 166, 255, 0.4);
+      color: white;
+      text-decoration: none;
+    }
+
+    .btn-portfolio:active {
+      transform: translateY(0);
+    }
+
+    .btn-portfolio.secondary {
+      background-color: #667eea;
+    }
+
+    .btn-portfolio.secondary:hover {
+      background-color: #4c51bf;
+    }
+
+    .btn-portfolio.outline {
+      background-color: transparent;
+      border: 2px solid #4da6ff;
+      color: #4da6ff;
+    }
+
+    .btn-portfolio.outline:hover {
+      background-color: #4da6ff;
+      color: white;
+    }
+
+    /* Mobile only */
+    @media (max-width: 767px) {
+      .mb-mobile-15 {
+        margin-bottom: 15px;
+      }
+
+      .mb-mobile-20 {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -46,19 +130,21 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">Certifications</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link"
             href="https://docs.google.com/document/d/1W013MTl9rjzv9FGnZ67aLq6RH9mc-pt75SQXimR-EjA/edit?usp=sharing"
-             target="_blank">Portfolio</a>
-        </li>
+            target="_blank">Portfolio</a>
+        </li> -->
         <li class="nav-item">
-<!--          <a class="nav-link"-->
-<!--            href="https://drive.google.com/file/d/189lAy9BMaKa7qiUkS69yaNkr3IZz3Ufu/view?usp=sharing"-->
-<!--             target="_blank">Resume</a>-->
-          <a class="nav-link"
-             href="https://docs.google.com/document/d/1f2KxseBn0OVHrc2KaZgnL1Cq2MRXK6gL/edit?usp=sharing&ouid=109962172808791879203&rtpof=true&sd=true"
-             target="_blank">Resume</a>
+          <a class="nav-link js-scroll-trigger" href="#resume">Resume & Portfolio</a>
         </li>
+        <!-- <li class="nav-item"> -->
+        <!-- <a class="nav-link" href="https://drive.google.com/file/d/189lAy9BMaKa7qiUkS69yaNkr3IZz3Ufu/view?usp=sharing"
+            target="_blank">Resume</a> -->
+        <!-- <a class="nav-link"
+            href="https://docs.google.com/document/d/1f2KxseBn0OVHrc2KaZgnL1Cq2MRXK6gL/edit?usp=sharing&ouid=109962172808791879203&rtpof=true&sd=true"
+            target="_blank">Resume</a> -->
+        <!-- </li> -->
       </ul>
     </div>
   </nav>
@@ -76,12 +162,22 @@
           <a href="mailto:rohimuhamadd@gmail.com" class="text-name">rohimuhamadd@gmail.com</a>
         </div>
         <p class="lead mb-3">
-          <b>With 4 years of experience as a web developer </b>, I have built and delivered tailored solutions for clients using PHP and Python, leveraging modern frameworks such as CodeIgniter 4, Laravel, and Odoo.<br>
-          In addition to backend development, I currently take on responsibilities as a DevOps Engineer, which include managing deployments, configuring and maintaining servers, and optimizing team workflows to ensure smooth and efficient development processes.
+          I am a Technical Odoo Developer with strong enterprise experience, specializing in customizing and extending
+          Odoo versions 13, 16, and 17 across core modules such as HR, Accounting, Project, and Stock, including the
+          development of custom HR solutions like shift-based attendance systems. I have delivered production-grade
+          systems for complex business domains, including healthcare HR for hospitals and factories, accounting
+          workflows for the petrochemical industry, inventory approval and stock-in-transit processes, and project
+          integrations with GitLab to support structured development. <br><br> In parallel, I work as a hands-on
+          Developer–DevOps
+          hybrid, managing CI/CD pipelines with GitLab Runner, Docker-based multi-environment deployments, and Linux
+          server operations, including monitoring with Grafana for system health, jobs, logs, and transaction activity,
+          while handling production incidents and supporting applications with over 100 active users, and continuously
+          growing toward a backend and infrastructure architecture role.
         </p>
         <div class="social-icons">
           <a class="social-icon" href="https://rohimoz28.netlify.app/"><i class="fab fa-blogger"></i></a>
-          <a class="social-icon" href="https://www.linkedin.com/in/rohim-muhamad-274351307/"><i class="fab fa-linkedin"></i></a>
+          <a class="social-icon" href="https://www.linkedin.com/in/rohim-muhamad-274351307/"><i
+              class="fab fa-linkedin"></i></a>
           <a class="social-icon" href="https://github.com/rohimoz28"><i class="fab fa-github"></i></a>
         </div>
       </div>
@@ -94,7 +190,8 @@
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
             <h3 class="mb-0">Odoo Developer & DevOps Engineer</h3>
-            <div class="subheading mb-3"><a href="https://www.dasos.id/" style="text-decoration: none;color: inherit" >PT. Sanbe Farma</a> </div>
+            <div class="subheading mb-3"><a href="https://www.dasos.id/"
+                style="text-decoration: none;color: inherit">PT. Sanbe Farma</a> </div>
             <p>Customize Odoo modules and also perform tasks as a DevOps engineer.</p>
           </div>
           <div class="flex-shrink-0">
@@ -104,7 +201,8 @@
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
             <h3 class="mb-0">Web Developer</h3>
-            <div class="subheading mb-3"><a href="https://www.dasos.id/" style="text-decoration: none;color: inherit" >PT. Data Sistem Solusindo</a> </div>
+            <div class="subheading mb-3"><a href="https://www.dasos.id/"
+                style="text-decoration: none;color: inherit">PT. Data Sistem Solusindo</a> </div>
             <p>I specialize in IT consultancy, providing expertise in maintaining the legacy codebase. </p>
           </div>
           <div class="flex-shrink-0">
@@ -130,30 +228,40 @@
         <h2 class="mb-5">Skills</h2>
         <div class="subheading mb-3">Programming Languages & Tools</div>
         <ul class="list-inline dev-icons">
-          <li class="list-inline-item"><i class="fab fa-fedora" data-toggle="tooltip" data-placement="top" title="Fedora"></i></li>
-          <li class="list-inline-item"><i class="fab fa-linux" data-toggle="tooltip" data-placement="top" title="Linux"></i></li>
-          <li class="list-inline-item"><i class="fab fa-html5" data-toggle="tooltip" data-placement="top" title="HTML5"></i></li>
-          <li class="list-inline-item"><i class="fab fa-css3-alt" data-toggle="tooltip" data-placement="top" title="CSS3"></i></li>
-          <li class="list-inline-item"><i class="fab fa-php" data-toggle="tooltip" data-placement="top" title="PHP"></i></li>
-          <li class="list-inline-item"><i class="fab fa-js-square" data-toggle="tooltip" data-placement="top" title="Javascript"></i></li>
-          <li class="list-inline-item"><i class="fab fa-free-code-camp" data-toggle="tooltip" data-placement="top" title="Codeigniter"></i></li>
-          <li class="list-inline-item"><i class="fab fa-laravel" data-toggle="tooltip" data-placement="top" title="Laravel"></i></li>
-          <li class="list-inline-item"><i class="fab fa-bootstrap" data-toggle="tooltip" data-placement="top" title="Bootstrap"></i></li>
-          <li class="list-inline-item"><i class="fab fa-github" data-toggle="tooltip" data-placement="top" title="GIT"></i></li>
-          <li class="list-inline-item"><i class="fab fa-docker" data-toggle="tooltip" data-placement="top" title="Docker"></i></li>
-          <li class="list-inline-item"><i class="fab fa-python" data-toggle="tooltip" data-placement="top" title="Python"></i></li>
-          <li class="list-inline-item"><i class="fab fa-gitlab" data-toggle="tooltip" data-placement="top" title="Gitlab CI/CD"></i></li>
-          <li class="list-inline-item"><i class="fas fa-code" data-toggle="tooltip" data-placement="top" title="Jetbrains IDE"></i></li>
+          <li class="list-inline-item"><i class="fab fa-fedora" data-toggle="tooltip" data-placement="top"
+              title="Fedora"></i></li>
+          <li class="list-inline-item"><i class="fab fa-linux" data-toggle="tooltip" data-placement="top"
+              title="Linux"></i></li>
+          <li class="list-inline-item"><i class="fab fa-html5" data-toggle="tooltip" data-placement="top"
+              title="HTML5"></i></li>
+          <li class="list-inline-item"><i class="fab fa-css3-alt" data-toggle="tooltip" data-placement="top"
+              title="CSS3"></i></li>
+          <li class="list-inline-item"><i class="fab fa-php" data-toggle="tooltip" data-placement="top" title="PHP"></i>
+          </li>
+          <li class="list-inline-item"><i class="fab fa-js-square" data-toggle="tooltip" data-placement="top"
+              title="Javascript"></i></li>
+          <li class="list-inline-item"><i class="fab fa-free-code-camp" data-toggle="tooltip" data-placement="top"
+              title="Codeigniter"></i></li>
+          <li class="list-inline-item"><i class="fab fa-laravel" data-toggle="tooltip" data-placement="top"
+              title="Laravel"></i></li>
+          <li class="list-inline-item"><i class="fab fa-bootstrap" data-toggle="tooltip" data-placement="top"
+              title="Bootstrap"></i></li>
+          <li class="list-inline-item"><i class="fab fa-github" data-toggle="tooltip" data-placement="top"
+              title="GIT"></i></li>
+          <li class="list-inline-item"><i class="fab fa-docker" data-toggle="tooltip" data-placement="top"
+              title="Docker"></i></li>
+          <li class="list-inline-item"><i class="fab fa-python" data-toggle="tooltip" data-placement="top"
+              title="Python"></i></li>
+          <li class="list-inline-item"><i class="fab fa-gitlab" data-toggle="tooltip" data-placement="top"
+              title="Gitlab CI/CD"></i></li>
+          <li class="list-inline-item"><i class="fas fa-code" data-toggle="tooltip" data-placement="top"
+              title="Jetbrains IDE"></i></li>
         </ul>
         <div class="subheading mb-3">Skills</div>
         <ul class="fa-ul mb-0">
           <li>
             <span class="fa-li"><i class="fas fa-check"></i></span>
             Containerization
-          </li>
-          <li>
-            <span class="fa-li"><i class="fas fa-check"></i></span>
-            CI/CD Pipeline
           </li>
           <li>
             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -174,6 +282,10 @@
           <li>
             <span class="fa-li"><i class="fas fa-check"></i></span>
             Rest-Api
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check"></i></span>
+            Shell Script
           </li>
         </ul>
       </div>
@@ -212,74 +324,90 @@
           <li>
             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
             PT. Arkana Solusi Digital:
-            <a href="https://drive.google.com/file/d/1ZT3qa0y5tLtv3wDMe4wCuzUD1pT_rjTR/view?usp=sharing"
-               target="_blank"
-               class="text-decoration-none">
+            <a href="https://drive.google.com/file/d/1ZT3qa0y5tLtv3wDMe4wCuzUD1pT_rjTR/view?usp=sharing" target="_blank"
+              class="text-decoration-none">
               Odoo Development Training</a>
           </li>
           <li>
             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
             Dicoding :
-            <a href="https://drive.google.com/file/d/1xEZz5qRhwF04M7XijH7w26QIHIhvo4Hd/view?usp=sharing"
-               target="_blank"
+            <a href="https://drive.google.com/file/d/1xEZz5qRhwF04M7XijH7w26QIHIhvo4Hd/view?usp=sharing" target="_blank"
               class="text-decoration-none">
               Belajar Dasar Pemrograman</a>
           </li>
           <li>
             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
             Babastudio :
-            <a href="https://drive.google.com/file/d/1ORpvxlcTIzq4NKjz462AedJZoIe-wg7i/view?usp=sharing"
-               target="_blank"
+            <a href="https://drive.google.com/file/d/1ORpvxlcTIzq4NKjz462AedJZoIe-wg7i/view?usp=sharing" target="_blank"
               class="text-decoration-none">
               Javascript</a>
           </li>
           <li>
             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
             Programmer Zaman Now:
-            <a href="https://drive.google.com/file/d/1lMhbNcfvvZS5gO3xYQUt5d9loAv_s8L7/view?usp=sharing"
-               target="_blank"
+            <a href="https://drive.google.com/file/d/1lMhbNcfvvZS5gO3xYQUt5d9loAv_s8L7/view?usp=sharing" target="_blank"
               class="text-decoration-none">
               Pemrograman PHP</a>
           </li>
           <li>
             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
             Programmer Zaman Now:
-            <a href="https://drive.google.com/file/d/19Ocml3hGrF09WcbCqI_dqrKrXMorDBoq/view?usp=sharing"
-               target="_blank"
+            <a href="https://drive.google.com/file/d/19Ocml3hGrF09WcbCqI_dqrKrXMorDBoq/view?usp=sharing" target="_blank"
               class="text-decoration-none">
               Pemrograman Javascript</a>
           </li>
           <li>
             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
             Programmer Zaman Now:
-            <a href="https://drive.google.com/file/d/1QyjfnwMEZcCj2T1947sFlhYv29F8VPa7/view?usp=sharing"
-               target="_blank"
+            <a href="https://drive.google.com/file/d/1QyjfnwMEZcCj2T1947sFlhYv29F8VPa7/view?usp=sharing" target="_blank"
               class="text-decoration-none">
               Laravel</a>
           </li>
           <li>
             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
             Programmer Zaman Now:
-            <a href="https://drive.google.com/file/d/1xF4BCMQi-l0rdDQ37bJxD-d5XKTRoP0_/view?usp=sharing"
-               target="_blank"
-               class="text-decoration-none">
+            <a href="https://drive.google.com/file/d/1xF4BCMQi-l0rdDQ37bJxD-d5XKTRoP0_/view?usp=sharing" target="_blank"
+              class="text-decoration-none">
               Docker</a>
           </li>
           <li>
             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
             Programmer Zaman Now:
             <a href="https://drive.google.com/file/d/1O9uS_bseljlh1nKl7kL_QU-7y1NA3k5L/view?usp=drive_link"
-               class="text-decoration-none">
+              class="text-decoration-none">
               PostgreSQL</a>
           </li>
         </ul>
       </div>
+    </section>
+    <section class="resume-section" id="resume">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Resume & Portfolio</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1 mb-4">
+            <h3 class="mb-0">Odoo Developer</h3>
+            <div class="button-group">
+              <a href="#portfolio-odoo" class="btn-portfolio">View Portfolio</a>
+              <a href="#experience-odoo" class="btn-portfolio secondary">Resume</a>
+            </div>
+          </div>
+          <div class="flex-grow-1 mb-mobile-15">
+            <h3 class="mb-0">Devops</h3>
+            <div class="button-group">
+              <a href="#portfolio-odoo" class="btn-portfolio">View Portfolio</a>
+              <a href="#experience-odoo" class="btn-portfolio secondary">Resume</a>
+            </div>
+          </div>
+        </div>
     </section>
   </div>
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
+  <script>
+
+  </script>
 </body>
 
 </html>
